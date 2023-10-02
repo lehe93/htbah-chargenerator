@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTBAH-Generator homebrewed</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+    <script src="basic.js"></script>
+</head>
+
+<body>
+
+    <div id="linkcontainer">
+        <a href="index.html">Home</a>
+        <a href="classic.html">Generator klassisch</a>
+        <a href="homebrewed.html">Generator homebrewed</a> 
+        <p class="spacer">&#124;</p> 
+        <a href="hbrules.html">homebrewed-Regeln</a>
+    </div>
+
+
+    <div id="maincontainer">
+        <h1>Charaktergenerator homebrewed</h1>
+        <label for="charname">Charaktername:</label>
+        <input type="text" id="charname" name="charname" class="spaced">
+        <label for="charage">Alter:</label>
+        <input type="number" id="charage" name="charage" class="spaced">
+        <label for="chartype">Volk:</label>
+        <input type="text" id="chartype" name="chartype" class="spaced">
+        <label for="avatar">Charakterbild:</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg, image/jpg">
+        <br />
+        <br />
+        <label for="lebenspunkte">Lebenspunkte:</label>
+        <input type="number" id="lebenspunkte" name="lebenspunkte" class="spaced">
+        <label for="arkaneum">Arkaneum:</label>
+        <input type="number" id="arkaneum" name="arkaneum" class="spaced">
+        <p>Hintergrund: <i>(z.B. Familienstand, Geburts- und Wohnort, Religion)</i></p>
+        <textarea rows="6" cols="40"></textarea>
+        <br />
+        <br />
+
+        <table>
+            <tr>
+                <th>Handeln</th>
+                <th>Wissen</th>
+                <th>Soziales</th>
+            </tr>
+            <tr>
+                <th class="sub">Fähigkeit / Grundwert</th>
+                <th class="sub">Fähigkeit / Grundwert</th>
+                <th class="sub">Fähigkeit / Grundwert</th>
+            </tr>
+            <tr>
+                <td><label for="handeln_w1">Nahkampf</label><input type="number" id="handeln_w1" name="handeln_w1" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w1">Religion</label><input type="number" id="wissen_w1" name="wissen_w1" class="value" min="0" max="100"></td>
+                <td><label for="sozial_w1">Überzeugen</label><input type="number" id="sozial_w1" name="sozial_w1" class="value" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="handeln_w2">Fernkampf</label><input type="number" id="handeln_w2" name="handeln_w2" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w2">Sprachen</label><input type="number" id="wissen_w2" name="wissen_w2" class="value" min="0" max="100"></td>
+                <td><label for="sozial_w2">Flirten</label><input type="number" id="sozial_w2" name="sozial_w2" class="value" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="handeln_w3">Klettern</label><input type="number" id="handeln_w3" name="handeln_w3" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w3">Geschichte</label><input type="number" id="wissen_w3" name="wissen_w3" class="value" min="0" max="100"></td>
+                <td><label for="sozial_w3">Einschüchtern</label><input type="number" id="sozial_w3" name="sozial_w3" class="value" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="handeln_w4">Schwimmen</label><input type="number" id="handeln_w4" name="handeln_w4" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w4">Politik</label><input type="number" id="wissen_w4" name="wissen_w4" class="value" min="0" max="100"></td>
+                <td><label for="sozial_w4">Menschenkenntnise</label><input type="number" id="sozial_w4" name="sozial_w4" class="value" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="handeln_w5">Reiten</label><input type="number" id="handeln_w5" name="handeln_w5" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w5">Medizin</label><input type="number" id="wissen_w5" name="wissen_w5" class="value" min="0" max="100"></td>
+                <td><label for="sozial_w5">Menschenkenntnis</label><input type="number" id="sozial_w5" name="sozial_w5" class="value" min="0" max="100"></td>
+            </tr>         
+            <tr>
+                <td><label for="handeln_w6">Fahrkünste</label><input type="number" id="handeln_w6" name="handeln_w6" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w6">Arkane Kunde</label><input type="number" id="wissen_w6" name="wissen_w6" class="value" min="0" max="100"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="handeln_w7">Musizieren (<input type="text" id="handeln_f7" name="handeln_f7" value="Instrument" class="instrument">)</label><input type="number" id="handeln_w7" name="handeln_w7" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w7">Physik</label><input type="number" id="wissen_w7" name="wissen_w7" class="value" min="0" max="100"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="handeln_w8">Akrobatik</label><input type="number" id="handeln_w8" name="handeln_w8" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w8">Chemie</label><input type="number" id="wissen_w8" name="wissen_w8" class="value" min="0" max="100"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="handeln_w9">Tierdressur</label><input type="number" id="handeln_w9" name="handeln_w9" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w9">Biologie</label><input type="number" id="wissen_w9" name="wissen_w9" class="value" min="0" max="100"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="handeln_w10">Schlösser knacken</label><input type="number" id="handeln_w10" name="handeln_w10" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w210">Mathematik</label><input type="number" id="wissen_w10" name="wissen_w10" class="value" min="0" max="100"></td>
+                <td></td>
+            </tr>       
+            <tr>
+                <td><label for="handeln_w11">Heimlichkeit</label><input type="number" id="handeln_w11" name="handeln_w11" class="value" min="0" max="100"></td>
+                <td><label for="wissen_w11">Elektronik & Informatik</label><input type="number" id="wissen_w11" name="wissen_w11" class="value" min="0" max="100"></td>
+                <td></td>
+            </tr>   
+            <tr>
+                <td></td>
+                <td><label for="wissen_w12">Spurenlesen</label><input type="number" id="wissen_w12" name="wissen_w12" class="value" min="0" max="100"></td>
+                <td></td>
+            </tr> 
+            <tr>
+                <td></td>
+                <td><label for="wissen_w13">Wahrnehmung</label><input type="number" id="wissen_w13" name="wissen_w13" class="value" min="0" max="100"></td>
+                <td></td>
+            </tr>
+            
+        </table>
+        <br />
+        <p>Inventar:</p>
+        <textarea rows="7" cols="60"></textarea>
+        <p>Anmerkungen:</p>
+        <textarea rows="7" cols="60"></textarea>
+        
+
+
+        <br />
+        <br />
+        <input type="button" name="generieren" value="Charakterbogen generieren" class="gen_button">
+
+
+
+
+
+    </div>    
+
+
+    <div id="footcontainer">
+        <p>&copy; 2023 &#124;</p>
+        <a href="impressum.html">Impressum</a>    
+        <p class="spacing"> powered by </o>
+        <a href="https://github.com/lehe93">lehe93</a>
+    </div>
+
+</body>
+</html>
+
